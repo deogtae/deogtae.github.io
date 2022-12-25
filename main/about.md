@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Test Page
-permalink: /main/about
 food: Pizza
 ---
 
+# /main/about.md
 - This is about page.
 - URL Path is /main/about
 - food: {{ page.food }}
@@ -12,3 +12,4 @@ food: Pizza
 {% for post in site.posts %}
     * [{{ post.title }}]({{ post.url }})
 {% endfor %}
+----
