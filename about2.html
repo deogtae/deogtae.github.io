@@ -1,0 +1,21 @@
+---
+layout: page
+title: Test Page
+permalink: /main/about2
+food: Pizza
+---
+<html>
+
+<body>
+	<h1>/main/about2</h1>
+	<li>This is about page.</li>
+	<li>URL Path is /main/about2</li>
+	<li>food: {{ page.food }}</li>
+	<li> Posts index</li>
+	<ul>
+		{% for post in site.posts %}
+		<li>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
